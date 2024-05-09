@@ -120,6 +120,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Process.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +138,12 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dll-injector-sc.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\FDProgramming\fdp-logo.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
