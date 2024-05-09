@@ -8,6 +8,6 @@ void main(array<String^>^ args)
 {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	dllinjector::MainForm form;
+	dllinjectorsc::MainForm form;
 	Application::Run(% form);
 }

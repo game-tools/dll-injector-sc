@@ -8,7 +8,7 @@
 #include "Utils.h"
 #include "Process.h"
 
-namespace dllinjector {
+namespace dllinjectorsc {
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -224,7 +224,7 @@ namespace dllinjector {
 			this->Controls->Add(this->chListBoxDlls);
 			this->Controls->Add(this->btnAddDll);
 			this->Controls->Add(this->comboBoxProcessesList);
-			this->Icon = gcnew System::Drawing::Icon(L"fdp-logo.ico");
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MainForm";
 			this->Text = L"Dll Injector by FuDeeP";
 			this->ResumeLayout(false);
@@ -311,6 +311,5 @@ namespace dllinjector {
 			}
 		}
 	}
-
-};
+	};
 }
